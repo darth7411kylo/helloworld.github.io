@@ -1,1 +1,49 @@
 <index class="html"></index>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Mad at Me?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #buttonContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #noButton {
+            transition: margin-left 0.5s;
+        }
+
+        #noButton:hover {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Are You Mad at Me?</h1>
+    <div id="buttonContainer">
+        <button class="button" onclick="alert('Oh no!')">Yes</button>
+        <button id="noButton" class="button" onclick="alert('Phew!')">No</button>
+    </div>
+</body>
+</html>
+
